@@ -1,0 +1,44 @@
+def create_profile():
+  """Gathers user information and stores it in a dictionary"""
+  profile = {}
+
+  # Basic information
+  profile["name"] = input("Enter your full name: ")
+  profile["age"] = int(input("Enter your age: "))
+  profile["occupation"] = input("What is your occupation? ")
+
+  # Contact information (optional)
+  while True:
+    add_contact = input("Do you want to add contact information (y/n)? ")
+    if add_contact.lower() not in ("y", "n"):
+      print("Invalid input. Please enter 'y' or 'n'.")
+      continue
+    break
+
+  if add_contact == "y":
+    profile["email"] = input("Enter your email address: ")
+    profile["phone"] = input("Enter your phone number (optional): ")
+
+  # Skills (optional)
+  while True:
+    add_skills = input("Do you want to add skills (y/n)? ")
+    if add_skills.lower() not in ("y", "n"):
+      print("Invalid input. Please enter 'y' or 'n'.")
+      continue
+    break
+
+  if add_skills == "y":
+    skills = []
+    while True:
+      skill = input("Enter a skill (or press enter to finish): ")
+      if not skill:
+        break
+      skills.append(skill)
+    profile["skills"] = skills
+
+  # Display profile
+  print("\nYour Profile:")
+  for key, value in profile.items():
+    print(f"{key.capitalize()}: {value}")
+
+create_profile()
