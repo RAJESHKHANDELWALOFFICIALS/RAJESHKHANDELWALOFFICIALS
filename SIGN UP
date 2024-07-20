@@ -1,0 +1,11 @@
+def sign_up():
+  """Prompts user for signup information and stores it (basic implementation)."""
+  username = input("Enter your username: ")
+  password = input("Enter your password: ")
+  email = input("Enter your email address: ")
+
+  # Simulate storing information (replace with actual storage method)
+  print(f"You have signed up successfully!\nUsername: {username}\nEmail: {email}")
+
+# Run the sign up function
+sign_up()
