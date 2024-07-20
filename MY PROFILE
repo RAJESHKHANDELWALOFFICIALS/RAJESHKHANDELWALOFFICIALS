@@ -1,0 +1,76 @@
+# My Profile in Python
+
+# Personal Information (replace with your details)
+name = "Your Name"
+email = "your_email@example.com"
+phone = "your_phone_number"
+location = "Your City, State/Country"
+
+# Skills and Experience (add or remove as needed)
+skills = [
+    "Python Programming",
+    "Machine Learning",
+    "Data Analysis",
+    "Web Development",
+    "Problem Solving",
+    "Communication",
+    "Teamwork"
+]
+
+experience = [
+    {
+        "company": "Company Name",
+        "position": "Job Title",
+        "duration": "Start Date - End Date (or Current)",
+        "description": "Brief description of your responsibilities and achievements"
+    },
+    # Add more experience entries as needed
+]
+
+# Education (replace with your educational background)
+education = [
+    {
+        "institution": "University/College Name",
+        "degree": "Degree Name",
+        "graduation_year": "Year of Graduation"
+    },
+    # Add more education entries as needed
+]
+
+# Interests (add your areas of interest)
+interests = [
+    "Machine Learning",
+    "Artificial Intelligence",
+    "Open Source Development",
+    "Gaming",
+    "Reading"
+]
+
+# Function to print your profile (optional)
+def print_profile():
+    print(f"Name: {name}")
+    print(f"Email: {email}")
+    print(f"Phone: {phone}")
+    print(f"Location: {location}")
+
+    print("\nSkills:")
+    for skill in skills:
+        print(f"- {skill}")
+
+    print("\nExperience:")
+    for exp in experience:
+        print(f"- {exp['company']}, {exp['position']}")
+        print(f"  ({exp['duration']})")
+        print(f"  {exp['description']}")
+
+    print("\nEducation:")
+    for edu in education:
+        print(f"- {edu['institution']}, {edu['degree']}")
+        print(f"  {edu['graduation_year']}")
+
+    print("\nInterests:")
+    for interest in interests:
+        print(f"- {interest}")
+
+# Call the print_profile function (if you want to print the profile)
+# print_profile()
