@@ -1,0 +1,11 @@
+def reset_username():
+  old_username = input("Enter your old username: ")
+  new_username = input("Enter your new username: ")
+  confirm_username = input("Confirm your new username: ")
+
+  if new_username == confirm_username:
+    print(f"Username changed from {old_username} to {new_username}")
+  else:
+    print("Username confirmation doesn't match. Please try again.")
+
+reset_username()
