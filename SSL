@@ -1,0 +1,10 @@
+import socket
+import ssl
+
+hostname = "www.example.com"
+context = ssl.create_default_context()
+
+with socket.create_connection((hostname, 443)) as sock:
+    ssock = context.wrap_socket(sock, server_hostname=hostname)
+    certificate = ssock.getpeercert(chain=True)
+    print(certificate)
