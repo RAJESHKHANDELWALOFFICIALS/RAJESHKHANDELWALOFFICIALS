@@ -1,4 +1,4 @@
 flask==2.1.0
 tensorflow==2.12.0
-numpy==1.21.2
+numpy==1.24.0  # Update numpy to a compatible version for Python 3.11
 gunicorn==20.1.0
